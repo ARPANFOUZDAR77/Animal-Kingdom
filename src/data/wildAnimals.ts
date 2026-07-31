@@ -1,0 +1,251 @@
+import { WildAnimal } from '../types';
+
+export const INITIAL_WILD_ANIMALS: WildAnimal[] = [
+  {
+    id: 'african-lion',
+    commonName: 'African Lion',
+    scientificName: 'Panthera leo',
+    animalClass: 'Mammal',
+    family: 'Felidae',
+    species: 'P. leo',
+    habitat: 'Grasslands, Savannas, Scrub, and Open Woodlands',
+    diet: 'Carnivore',
+    predators: ['Hyenas (cubs/sick)', 'Humans'],
+    lifespan: '10 - 14 years in wild',
+    weight: '120 - 250 kg',
+    height: '1.2 m at shoulder',
+    conservationStatus: 'Vulnerable',
+    geographicRange: 'Sub-Saharan Africa, Gir Forest (India)',
+    imageUrl: 'https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=800&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80'
+    ],
+    interestingFacts: [
+      'A lion’s roar can be heard up to 8 kilometers (5 miles) away.',
+      'Lions are the only cats that live in social groups called prides.',
+      'Female lions do about 90% of the hunting for the pride.'
+    ],
+    behavior: 'Social, territorial, nocturnal hunter living in prides of related females and offspring guarded by coalition males.',
+    speed: '80 km/h (burst)'
+  },
+  {
+    id: 'bengal-tiger',
+    commonName: 'Bengal Tiger',
+    scientificName: 'Panthera tigris tigris',
+    animalClass: 'Mammal',
+    family: 'Felidae',
+    species: 'P. tigris',
+    habitat: 'Tropical Rainforests, Mangroves, Grasslands',
+    diet: 'Carnivore',
+    predators: ['None (Apex Predator)', 'Humans'],
+    lifespan: '10 - 15 years',
+    weight: '140 - 260 kg',
+    height: '1.1 m at shoulder',
+    conservationStatus: 'Endangered',
+    geographicRange: 'India, Bangladesh, Nepal, Bhutan',
+    imageUrl: 'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=800&q=80',
+    additionalImages: [
+      'https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=800&q=80'
+    ],
+    interestingFacts: [
+      'No two tigers have the exact same stripe pattern; their stripes are as unique as human fingerprints.',
+      'Tigers are excellent swimmers and frequently soak in rivers during hot afternoons.',
+      'Tigers have night vision that is six times better than humans.'
+    ],
+    behavior: 'Solitary, territorial ambush predator active during dawn and dusk.',
+    speed: '65 km/h'
+  },
+  {
+    id: 'giant-panda',
+    commonName: 'Giant Panda',
+    scientificName: 'Ailuropoda melanoleuca',
+    animalClass: 'Mammal',
+    family: 'Ursidae',
+    species: 'A. melanoleuca',
+    habitat: 'Bamboo Forests of High Mountain Ranges',
+    diet: 'Herbivore',
+    predators: ['Snow Leopards (cubs)', 'Jackals', 'Humans'],
+    lifespan: '20 years in wild',
+    weight: '70 - 125 kg',
+    height: '60 - 90 cm at shoulder',
+    conservationStatus: 'Vulnerable',
+    geographicRange: 'South-Central China',
+    imageUrl: 'https://images.unsplash.com/photo-1527161153332-99adcc6f2966?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Giant Pandas spend up to 12 hours a day eating bamboo to satisfy their nutritional needs.',
+      'Pandas have an adapted wrist bone known as a "pseudo-thumb" to help grip bamboo stalks.',
+      'A newborn panda is about the size of a stick of butter and is born pink and hairless.'
+    ],
+    behavior: 'Peaceful, solitary, spend most of their awake time foraging for bamboo.',
+    speed: '30 km/h'
+  },
+  {
+    id: 'bald-eagle',
+    commonName: 'Bald Eagle',
+    scientificName: 'Haliaeetus leucocephalus',
+    animalClass: 'Bird',
+    family: 'Accipitridae',
+    species: 'H. leucocephalus',
+    habitat: 'Coastal Areas, Lakes, Rivers, Wetlands',
+    diet: 'Carnivore',
+    predators: ['Great Horned Owls (eggs/chicks)', 'Humans'],
+    lifespan: '20 - 30 years',
+    weight: '3.0 - 6.3 kg',
+    height: '70 - 102 cm (Wingspan 1.8 - 2.3 m)',
+    conservationStatus: 'Least Concern',
+    geographicRange: 'North America (Canada, US, Mexico)',
+    imageUrl: 'https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Bald Eagles build the largest tree nests of any bird species in North America.',
+      'Their eyesight is 4 to 8 times stronger than that of a average human.',
+      'They mate for life and share incubation duties equally.'
+    ],
+    behavior: 'Diurnal raptor, spectacular diving fisher with extraordinary aerial agility.',
+    speed: '160 km/h (diving)'
+  },
+  {
+    id: 'emperor-penguin',
+    commonName: 'Emperor Penguin',
+    scientificName: 'Aptenodytes forsteri',
+    animalClass: 'Bird',
+    family: 'Spheniscidae',
+    species: 'A. forsteri',
+    habitat: 'Antarctic Ice Pack and Surrounding Oceans',
+    diet: 'Carnivore',
+    predators: ['Leopard Seals', 'Orcas', 'Giant Petrels'],
+    lifespan: '15 - 20 years',
+    weight: '22 - 45 kg',
+    height: '110 - 130 cm',
+    conservationStatus: 'Near Threatened',
+    geographicRange: 'Antarctica',
+    imageUrl: 'https://images.unsplash.com/photo-1598439210625-5067c578f3f6?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Emperor penguins are the tallest and heaviest of all living penguin species.',
+      'Male Emperor penguins incubate the single egg for over two months during severe Antarctic winter winds without eating.',
+      'They can dive deeper than 500 meters (1,600 feet) and hold their breath for up to 20 minutes.'
+    ],
+    behavior: 'Colonial, highly social, huddled thermoregulation in sub-zero blizzards.',
+    speed: '14 km/h (swimming)'
+  },
+  {
+    id: 'snow-leopard',
+    commonName: 'Snow Leopard',
+    scientificName: 'Panthera uncia',
+    animalClass: 'Mammal',
+    family: 'Felidae',
+    species: 'P. uncia',
+    habitat: 'Rugged Mountain Ranges of Central and South Asia',
+    diet: 'Carnivore',
+    predators: ['Humans (poaching/habitat loss)'],
+    lifespan: '15 - 18 years',
+    weight: '30 - 55 kg',
+    height: '60 cm at shoulder',
+    conservationStatus: 'Vulnerable',
+    geographicRange: 'Himalayas, Pamir, Altai Mountains (12 countries)',
+    imageUrl: 'https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Snow leopards cannot roar due to the anatomy of their vocal cords; instead, they purr, hiss, and chuff.',
+      'Their thick fur-covered tails are as long as their bodies and serve as blankets and balance aids.',
+      'Known as the "ghost of the mountains" because of their incredible camouflage.'
+    ],
+    behavior: 'Solitary, secretive mountain climber capable of leaping up to 15 meters in a single bound.',
+    speed: '60 km/h'
+  },
+  {
+    id: 'green-sea-turtle',
+    commonName: 'Green Sea Turtle',
+    scientificName: 'Chelonia mydas',
+    animalClass: 'Reptile',
+    family: 'Cheloniidae',
+    species: 'C. mydas',
+    habitat: 'Tropical and Subtropical Coastal Waters and Coral Reefs',
+    diet: 'Herbivore',
+    predators: ['Sharks', 'Crabs (hatchlings)', 'Sea Birds', 'Humans'],
+    lifespan: '70 - 80 years',
+    weight: '110 - 190 kg',
+    height: '1.0 - 1.2 m shell length',
+    conservationStatus: 'Endangered',
+    geographicRange: 'Atlantic, Pacific, and Indian Oceans',
+    imageUrl: 'https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Green sea turtles return to the exact beach where they were born to lay their eggs after decades at sea.',
+      'Adults are unique among sea turtles in being almost exclusively herbivorous, eating seagrasses and algae.',
+      'Their fat turns green due to their plant-based diet, giving them their common name.'
+    ],
+    behavior: 'Migratory marine navigator travelling thousands of ocean miles between feeding and nesting sites.',
+    speed: '35 km/h (swimming)'
+  },
+  {
+    id: 'red-panda',
+    commonName: 'Red Panda',
+    scientificName: 'Ailurus fulgens',
+    animalClass: 'Mammal',
+    family: 'Ailuridae',
+    species: 'A. fulgens',
+    habitat: 'High-Altitude Temperate Forests with Bamboo Understory',
+    diet: 'Omnivore',
+    predators: ['Snow Leopards', 'Marten', 'Humans'],
+    lifespan: '8 - 10 years',
+    weight: '3.0 - 6.2 kg',
+    height: '50 - 64 cm',
+    conservationStatus: 'Endangered',
+    geographicRange: 'Eastern Himalayas (Nepal, Bhutan, Myanmar, China)',
+    imageUrl: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Red pandas were discovered 48 years BEFORE the giant panda.',
+      'They wrap their ringed bushy tails around themselves like a winter blanket.',
+      'When threatened, they stand on their hind legs to appear larger.'
+    ],
+    behavior: 'Arboreal, crepuscular tree-climber that uses flexible ankles to descend trees headfirst.',
+    speed: '24 km/h'
+  },
+  {
+    id: 'orca-killer-whale',
+    commonName: 'Orca (Killer Whale)',
+    scientificName: 'Orcinus orca',
+    animalClass: 'Mammal',
+    family: 'Delphinidae',
+    species: 'O. orca',
+    habitat: 'All Oceans from Arctic to Antarctic waters',
+    diet: 'Carnivore',
+    predators: ['None (Apex Ocean Predator)'],
+    lifespan: '50 - 80 years',
+    weight: '3,000 - 6,000 kg',
+    height: '6 - 8 m length',
+    conservationStatus: 'Least Concern',
+    geographicRange: 'Worldwide Oceans',
+    imageUrl: 'https://images.unsplash.com/photo-1568430460464-02e1dc61e922?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Orcas are actually the largest member of the dolphin family.',
+      'Different pods have distinct dialects and unique hunting techniques passed down through generations.',
+      'They use sophisticated echolocation to hunt fish, seals, and even large blue whales.'
+    ],
+    behavior: 'Highly intelligent, matriarchal social pods with complex vocal languages and tactical cooperation.',
+    speed: '56 km/h'
+  },
+  {
+    id: 'poison-dart-frog',
+    commonName: 'Poison Dart Frog',
+    scientificName: 'Dendrobatidae',
+    animalClass: 'Amphibian',
+    family: 'Dendrobatidae',
+    species: 'Dendrobates tinctorius',
+    habitat: 'Tropical Rainforest Canopy and Humid Leaf Litter',
+    diet: 'Insectivore',
+    predators: ['Leimadophis snakes (immune to venom)', 'Humans'],
+    lifespan: '3 - 10 years',
+    weight: '2 - 8 grams',
+    height: '2 - 5 cm',
+    conservationStatus: 'Vulnerable',
+    geographicRange: 'Central and South America Rainforests',
+    imageUrl: 'https://images.unsplash.com/photo-1500479694472-551d1fb6258d?auto=format&fit=crop&w=800&q=80',
+    interestingFacts: [
+      'Their bright warning coloration (aposematism) signals extreme toxicity to prospective predators.',
+      'In the wild, their poison comes from eating wild toxic ants, termites, and beetles.',
+      'Indigenous tribes used their skin secretions to tip blow-pipe hunting darts.'
+    ],
+    behavior: 'Diurnal forest floor inhabitant with meticulous parental care of tadpoles.',
+    speed: '12 km/h'
+  }
+];
